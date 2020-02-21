@@ -1,11 +1,5 @@
 package br.com.pessoa.config.util;
 
-import org.apache.commons.lang.WordUtils;
-
-import java.text.Normalizer;
-import java.util.Arrays;
-import java.util.Objects;
-
 public class StringUtil {
 
     private StringUtil() {
