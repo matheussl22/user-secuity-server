@@ -1,0 +1,5 @@
+insert into usuario(username, password, account_non_locked, account_non_expired, credentials_non_expired, enabled) values ('matheus', '{bcrypt}$2a$10$t19OVS8YHXo.U.GmkL0gluhVUEUKYd5EKwWZzhF/KebuO9gZoBRui', true, true, true, true);
+insert into usuario(username, password, account_non_locked, account_non_expired, credentials_non_expired, enabled) values ('softplan', '{bcrypt}$2a$10$t19OVS8YHXo.U.GmkL0gluhVUEUKYd5EKwWZzhF/KebuO9gZoBRui', true, true, true, true);
+
+insert into pessoa values(1,'08224178976', 'Matheus Warmeling Matias','MASCULINO', 'matheuswarmeling@gmail.com', '1996-02-02', 'São Domingos do Araguaia', 'Portuguesa', '2019-05-26 01:48:33.573000', '2019-05-26 01:48:33.573000');
+insert into pessoa values(2,'08222133976', 'Jorge Ceolin','MASCULINO', 'jorgeceolin@gmail.com', '1996-02-02', 'São Domingos do Araguaia', 'Portuguesa', '2019-05-26 01:48:33.573000', '2019-05-26 01:48:33.573000');

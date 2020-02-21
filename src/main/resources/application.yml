@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    serialization:
+      write_dates_as_timestamps: false
+  datasource:
+      url: jdbc:postgresql://postgres.cnu6qkyrvh82.sa-east-1.rds.amazonaws.com:5432/postgres
+      username: usuarioMaster
+      password: prod123456
+      driver-class-name: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    ecliselink:
+      loggingLevel: DEBUG
+      weaving: false
+    show-sql: true
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    hibernate:
+      ddl-auto: update
+  flyway:
+    locations: classpath:/db/migration/postgres
+
+security:
+  oauth2:
+    client:
+      client-id: estrutura
+      client-secret: estruturasecret
+      scope: read,write
+      auto-approve-scopes: '.*'

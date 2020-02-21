@@ -1,0 +1,15 @@
+version: '2'
+services:
+
+  postgres:
+    build: resources/docker/postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+
+
+

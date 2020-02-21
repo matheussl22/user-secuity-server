@@ -1,0 +1,16 @@
+spring:
+  profiles: test
+  jpa:
+    show-sql: true
+  flyway:
+    locations: classpath:/db/migration/postgres
+  h2:
+    console:
+      enabled: false
+  datasource:
+    url: jdbc:h2:file:~/test1
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    hikari:
+      connectionInitSql: ''
