@@ -1,4 +1,5 @@
 br/com/pessoa/domain/usuario/UsuarioServiceImpl.class
+br/com/pessoa/security/SimpleCORSFilter.class
 br/com/pessoa/domain/pessoa/Pessoa$PessoaBuilder.class
 br/com/pessoa/security/ResourceServerConfiguration.class
 br/com/pessoa/domain/pessoa/Pessoa.class

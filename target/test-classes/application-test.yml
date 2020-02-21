@@ -8,7 +8,7 @@ spring:
     console:
       enabled: false
   datasource:
-    url: jdbc:h2:file:~/test1
+    url: jdbc:h2:file:~/$(head -c 24 /dev/random | base64)
     username: sa
     password:
     driverClassName: org.h2.Driver
