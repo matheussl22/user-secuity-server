@@ -1,6 +1,7 @@
 package br.com.pessoa.config.support.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
@@ -22,12 +23,12 @@ public abstract class EntityAudit {
 
     @Column(name = "data_criacao", updatable = false)
     @CreatedDate
-    @JsonFormat(pattern="yyyy-MM-dd hh-mm-ss")
+    @JsonIgnore
     private LocalDateTime dataCriacao = LocalDateTime.now();
 
     @Column(name = "data_atualizacao")
     @LastModifiedDate
-    @JsonFormat(pattern="yyyy-MM-dd hh-mm-ss")
+    @JsonIgnore
     private LocalDateTime dataAtualizacao = LocalDateTime.now();
 
     public LocalDateTime getDataCriacao() {
