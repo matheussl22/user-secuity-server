@@ -1,2 +1,2 @@
 backend-pessoa
-Example security server. 
+Example security server
